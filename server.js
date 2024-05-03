@@ -20,7 +20,7 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origins: ["http://localhost:4200"],
+    origins: ["http://localhost:4200", "https://leapifytalk.me", "https://leapifytalk.io"],
 
   },
 });
